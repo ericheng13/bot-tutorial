@@ -4,15 +4,15 @@ var botID = process.env.BOT-ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^(cls|clear)$/;
-      botRegexNuke = /^nuke$/;
+      botRegex = /^(Cls|Clear|cls|clear)$/;
+      botRegexNuke = /^(N|n)uke$/;
 
       clsResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>";
       nukeResponse2 = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-      nukeResponse = "- -..-^~~~^-..- -\n-.~ - - - - - ~.-\n(;: - - - - - :;)\n-(: - - - - - :)-\n-- ':.- - -.:' --\n-- - - | | - - --\n-- - (=====) - --\n-- - - | | - - --\n-- - - | | - - --\n-- - - | | - - --\n-- -((/ - \\))- --";
+      nukeResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n- -..-^~~~^-..- -\n-.~ - - - - - ~.-\n(;: - - - - - :;)\n-(: - - - - - :)-\n-- ':.- - -.:' --\n-- - - | | - - --\n-- - (=====) - --\n-- - - | | - - --\n-- - - | | - - --\n-- - - | | - - --\n-- -((/ - \\))- --";
                    //"   ..-^~~~^-..   \n .~           ~. \n(;:           :;)\n (:           :) \n   ':.-   -.:'   \n       | |       \n     (=====)     \n       | |\n       | |-------\n       | |-------\n    ((/   \))----";
 
   if(request.text && botRegex.test(request.text)) {
