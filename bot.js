@@ -12,7 +12,8 @@ function respond() {
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-      nukeResponse = "- -..-^~~~^-..- -\n-.~ - - - - - ~.-\n(;: - - - - - :;)\n-(: - - - - - :)-\n-- ':.- - -.:' --\n-- - - | | - - --\n-- - (=====) - --\n-- - - | | - - --\n-- - - | | - - --\n-- - - | | - - --\n-- -((/ - \\))- --";
+      nukeResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                      + "- -..-^~~~^-..- -\n-.~ - - - - - ~.-\n(;: - - - - - :;)\n-(: - - - - - :)-\n-- ':.- - -.:' --\n-- - - | | - - --\n-- - (=====) - --\n-- - - | | - - --\n-- - - | | - - --\n-- - - | | - - --\n-- -((/ - \\))- --";
                    //"   ..-^~~~^-..   \n .~           ~. \n(;:           :;)\n (:           :) \n   ':.-   -.:'   \n       | |       \n     (=====)     \n       | |\n       | |-------\n       | |-------\n    ((/   \))----";
 
   if(request.text && botRegex.test(request.text)) {
