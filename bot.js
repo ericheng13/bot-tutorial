@@ -12,7 +12,9 @@ function respond() {
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-      nukeResponse = "   ..-^~~~^-..\n .~           ~.\n(;:           :;)\n (:           :)\n   ':._   _.:'\n       | |\n     (=====)\n       | |\n       | |\n       | |\n    ((/   \))";
+      nukeResponse = "````..-^~~~^-..\n`.~````````````~.\n(;:````````````:;)\n`(:````````````:)\n```':._```_.:'\n```````|``|\n`````(=====)\n```````|``|\n```````|``|\n```````|``|\n````((/````\\))";
+      //"   ..-^~~~^-..\n .~           ~.\n(;:           :;)\n (:           :)\n   ':._   _.:'\n       | |\n     (=====)\n       | |\n       | |\n       | |\n    ((/   \))";
+
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(clsResponse);
