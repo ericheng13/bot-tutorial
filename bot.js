@@ -1,15 +1,25 @@
 var HTTPS = require('https');
-var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^cls$/;
+      botRegex = /^(cls|clear)$/;
+      botRegexNuke = /^nuke$/;
 
+      clsResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>";
+      nukeResponse2 = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                      + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                      + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                      + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+      nukeResponse = "   ..-^~~~^-..\n .~           ~.\n(;:           :;)\n (:           :)\n   ':._   _.:'\n       | |\n     (=====)\n       | |\n       | |\n       | |\n    ((/   \))";
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage();
+    postMessage(clsResponse);
+    this.res.end();
+  }else if(request.text && botRegexNuke.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(nukeResponse);
     this.res.end();
   } else {
     console.log("don't care");
@@ -18,10 +28,10 @@ function respond() {
   }
 }
 
-function postMessage() {
+function postMessage(response) {
   var botResponse, options, body, botReq;
 
-  botResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>";//cool();
+  botResponse = response;
 
   options = {
     hostname: 'api.groupme.com',
