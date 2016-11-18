@@ -12,7 +12,7 @@ function respond() {
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-      nukeResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_ _..-^~~~^-.._ _\n_.~ _ _ _ _ _ ~._\n(;: _ _ _ _ _ :;)\n_(: _ _ _ _ _ :)_\n__ ':._ _ _.:' __\n__ _ _ | | _ _ __\n__ _ (=====) _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _((/ _ \\))_ __";
+      nukeResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_ _..-^~~~^-.._ _\n_.~ _ _ _ _ _ ~._\n(;: _ _ _ _ _ :;)\n_(: _ _ _ _ _ :)_\n__ ':._ _ _.:' __\n__ _ _ | | _ _ __\n__ _ (=====) _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _((/ _ \\))_ __";
                    //"   ..-^~~~^-..   \n .~           ~. \n(;:           :;)\n (:           :) \n   ':._   _.:'   \n       | |       \n     (=====)     \n       | |\n       | |_______\n       | |_______\n    ((/   \))____";
 
   if(request.text && botRegex.test(request.text)) {
