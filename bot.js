@@ -4,15 +4,15 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^(cls|clear)$/;
-      botRegexNuke = /^nuke$/;
+      botRegex = /^(c|C)(ls|lear)$/;
+      botRegexNuke = /^(N|n)uke$/;
 
       clsResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>";
       nukeResponse2 = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                       + "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
-      nukeResponse = "_ _..-^~~~^-.._ _\n_.~ _ _ _ _ _ ~._\n(;: _ _ _ _ _ :;)\n_(: _ _ _ _ _ :)_\n__ ':._ _ _.:' __\n__ _ _ | | _ _ __\n__ _ (=====) _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _((/ _ \\))_ __";
+      nukeResponse = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n_ _..-^~~~^-.._ _\n_.~ _ _ _ _ _ ~._\n(;: _ _ _ _ _ :;)\n_(: _ _ _ _ _ :)_\n__ ':._ _ _.:' __\n__ _ _ | | _ _ __\n__ _ (=====) _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _ _ | | _ _ __\n__ _((/ _ \\))_ __";
                    //"   ..-^~~~^-..   \n .~           ~. \n(;:           :;)\n (:           :) \n   ':._   _.:'   \n       | |       \n     (=====)     \n       | |\n       | |_______\n       | |_______\n    ((/   \))____";
 
   if(request.text && botRegex.test(request.text)) {
