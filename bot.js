@@ -4,7 +4,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^_(c|C)(ls|lear)$/;
+      botRegex = /^(c|C)(ls|lear)$/;
       //botRegexNuke = /^(N|n)uke$/;
 
       clsResponse = "clearing screen...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>_";
@@ -29,10 +29,10 @@ function respond() {
     this.res.writeHead(200);
     postMessage(clsResponse);
     this.res.end();
-  }else if(request.text && botRegexNuke.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage(nukeResponse);
-    this.res.end();
+  // }else if(request.text && botRegexNuke.test(request.text)) {
+  //   this.res.writeHead(200);
+  //   postMessage(nukeResponse);
+  //   this.res.end();
   } else {
     console.log("don't care");
     this.res.writeHead(200);
